@@ -1,0 +1,270 @@
+@media (max-width: 414px) {
+        
+    .body {
+        background: black;
+    }
+
+ 
+    .headerDiv {
+        position: sticky;
+        flex-direction: column;
+        text-align: center;
+        background-color: transparent;
+        margin-right: 10px;
+        
+    }
+
+    #Home {
+        margin-top: -30px;
+        margin-bottom: -250px;
+    }
+
+    .logo img {
+        max-width: 160px;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: block;
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 8px 8px;
+    }
+
+    .frontPage {
+        font-size: 1px;
+        margin-top: 290px;
+        margin-left: 40px;
+    }
+
+    .frontPage h2 {
+        font-size: 40px;
+    }
+
+    .frontPage p {
+        margin-top: 5px;
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+
+    .frontPage a {
+        margin-top: 20px;
+        padding: 12px 18px;
+        font-size: 18px;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    #AboutMe h2 {
+        font-size: 80px;
+        margin-left: -15px;
+        margin-top: -105px;
+    }
+
+    #AboutMe .textboxP {
+        font-size: 13px;
+        height: auto;
+       
+    }
+
+    .boxArea {
+        flex-direction: column;
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .box {
+        width: 280px;
+        margin-left: -10px;
+        
+    }
+
+    .box img {
+        width: 300px;
+        height: auto;
+        
+    }
+
+
+    .overlay h3 {
+        margin-left: 50px;
+        font-size: 14px;
+    }
+
+    .overlay p {
+        font-size: 10px;
+        margin-bottom: 200px;
+        width: 220px;
+        height: auto;
+        border: 1px transparent;
+        margin-left: -10px;
+    }
+    
+  
+    #Skills .textHeader {
+        margin-left: -100px;
+        margin-bottom: -200px;
+    }
+
+    #Skills .textHeader h1{
+        letter-spacing: -5px;
+        font-size: 50px;
+        margin-left: 100px;
+        margin-bottom: -20px;
+    }
+
+    #Skills .textHeader h2 {
+        margin-top: -180px;
+        margin-left: 115px;
+        font-size: 80px;
+    }
+
+    #Skills .boxArea {
+        margin-right: 50px;
+        padding: 0 auto;
+      
+    }
+
+    #Skills .box img {
+        width: 90vw;
+        height: auto;
+        margin-left: 135px;
+    }
+
+    #Skills .overlay {
+        width: 100vw;
+        margin-left: 110px;
+        
+    }
+
+    #Skills .overlay h3 {
+        font-size: 20px;
+    }
+
+    #Skills .overlay p {
+        font-size: 13px;
+        
+    }
+
+
+    #Skills .wrapper {
+        margin-left: -150px;
+        margin-bottom: 900px;
+        z-index: 1000;
+        
+    }
+    
+
+    .skill-images {
+
+        object-fit: cover;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding-top: 60px;
+    }
+
+    .skill-images img {
+        margin-top: 30px;
+        width: 300px;
+        height: auto;
+    }
+
+    .digitalartDiv {
+        background: black;
+    }
+
+    .textHeader2 {
+        margin-top: -100px;
+    }
+
+    .textHeader2 h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+        letter-spacing: -5px;
+    }
+
+    .textHeader2 h2 {
+        margin-left: 10px;
+        font-size: 80px;
+    }
+
+    .slider-bar {
+        max-width: 100%;
+        margin-top: -50px;
+        width: 70vw;
+        height: 60vh;
+    }
+    
+    .slider {
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .slider img {
+        display: flex;
+        object-fit: cover;
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .slider-nav {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 40vh;
+        margin-left: -300px;
+        column-gap: 24px;
+        
+    }
+
+    .Message-me-container {
+        width: 40vh;
+        height: auto;
+        padding: 10px;
+        
+    }
+
+    .form .input-box input {
+        width: 300px;
+    }
+
+    .socials {
+        margin-right: 0;
+        
+    }
+
+    .socials-div {
+        display: flex;
+        flex-direction: row;
+        margin-top: -180px;
+    }
+
+    .footerMenu li {
+        display: block;
+        margin: 5px 0;
+        width: 60vw;
+        margin-left: 75px;
+    }
+}

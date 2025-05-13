@@ -1,0 +1,910 @@
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(BG88.gif);
+    color: white;
+    background-size:contain;
+    object-fit: cover;
+    
+   
+}
+
+
+.portfolioDiv header {
+    top: 0;
+    position: sticky;
+    background: transparent;
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+    padding: 5px 5px;
+    padding-bottom: 8px;
+    z-index: 1000; /* I used this to make the navbar go front and not overlap with images*/
+    animation: fadeDown 0.5s 0.2s backwards;
+}
+
+.portfolioDiv header:hover {}
+
+.headerDiv {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    
+    display: flex;
+    float: left;
+    animation: fadeDown 0.5s 0.2s backwards;
+}
+
+.logo img {
+    cursor: pointer;
+    max-width: 1000px;
+    height: auto;
+    width: 190px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 14px;
+    margin-right: 88px;
+    margin-left: 20px;
+    transition: 300ms;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+.navbar {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    animation: fadeDown 0.5s 0.2s backwards;
+}
+
+
+.navbar ul {
+    margin-left: 60vh;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.navbar ul:hover {
+    transform: scale(1.08);
+    
+}
+
+.navbar li {
+    display: flex;
+    display: inline;
+    padding: 20px 20px;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 18px 18px;
+    transition: all 0.4s ease;
+    letter-spacing: -1.2px;
+}
+
+.navbar a:hover {
+   color: black;
+   background-color: rgb(219, 46, 104);
+   box-shadow: 0px 0px 10px #BE3144;
+}
+
+.frontpageDiv {
+    display: flex;
+    width: 100%;
+}
+
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 400px;
+}
+
+.frontPage em {
+    font-size: 30px;
+    font-weight: 500;
+    animation: fadeUp 0.5s forwards;
+}
+
+.frontPage h2 {
+    font-size: 75px;
+    margin-top: -15px;
+    letter-spacing: -4px;
+    animation: fadeUp 0.5s forwards;
+}
+
+.frontPage p {
+    font-size: 95px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    color: rgb(106, 255, 255);
+    text-transform: uppercase;
+    margin-top: -35px;
+    letter-spacing: -5px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s;
+}
+
+
+.frontPage a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    cursor: pointer;
+    background-color: #fc4b94;
+    box-shadow: 0px 2px 25px 1px #fc4b94;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 20px 20px;
+    transition: 350ms;
+    margin-top: -50px;
+    letter-spacing: -2px;
+    animation: fadeDown 0.5s;
+}
+
+.frontPage a:hover {
+    transform: scale(1.09);
+    background-color: #BE3144;
+    color: rgb(0, 0, 0);
+}
+
+.profile {
+    position: absolute;
+    width: 100%;
+
+}
+.profile-image {
+    margin-top: 55px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-top: 3px solid #fc4b94;
+    border-bottom: 3px solid rgb(161, 231, 248);
+    border-right: 2px solid #fc4b94;
+    border-left: 2px solid rgb(161, 231, 248);
+    animation: fadeUp 1s;
+    transition: 200ms;
+}
+
+.profile-image:hover {
+    filter: hue-rotate(-18deg);
+    transform: scale(1.08);
+}
+
+/* AboutMe================================================= */
+
+
+#AboutMe {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 320px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    
+    
+}
+
+#AboutMe h1{
+    font-weight: 1000;
+    position: relative;
+    font-size: 60px;
+    z-index: 2;
+    margin-top: 90px;
+    letter-spacing: 2px;
+    color: rgb(21, 110, 133);
+    animation: fadeDown 0.5s 0.2s backwards;
+    
+}
+
+#AboutMe h1:hover {
+    color: #fc4b94;
+}
+
+
+#AboutMe h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: -140px;
+    margin-left: 620px;
+    color: rgb(223, 220, 220);
+    z-index: 1;
+    letter-spacing: -8px;
+    animation: fadeDown 0.5s 0.2s backwards;
+    
+}
+
+#AboutMe .textboxP {
+    text-align: justify;
+    width: 75%;
+    background-color: rgba(225, 252, 252, 0.267);
+    margin-top: 50px;
+    font-size: 30px;
+    border: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 12px 5px -5px rgba(0, 0, 0, 0.3);
+    animation: fadeUp 0.5s forwards;
+    
+}
+
+.wrapper {
+    padding: 10px 10%;
+    animation: fadeUp 0.5s forwards;
+}
+
+
+#cardArea {
+    padding: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+.boxArea {
+    max-width: 100%;
+    width: 60%;
+    display: flex;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+
+
+.box {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+
+.box img { 
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: effect 0.5;
+}
+
+.overlay {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10;
+    left: 0;
+    bottom: 0;
+    padding: 0 40px;
+    font-size: 14px;
+}
+
+
+
+.overlay h3 {
+    text-align: center;
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 70%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(106, 255, 255);
+}
+
+.overlay p {
+   text-align: center;
+   margin-bottom: 100px;
+   margin-left: -20px;
+   width: 90%;
+   font-size: 18px;
+   font-weight: 500;
+   color: white;
+}
+
+.box:hover{
+    transform: translateY(-30px);
+    
+}
+
+.box:hover .overlay {
+    height: 100%;
+
+}
+
+
+/* AboutMe2================================================= */
+
+
+#AboutMe2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    padding-bottom: 100px;
+    font-family:'Segoe UI';
+    letter-spacing: -1px;
+    
+    
+    
+}
+
+#AboutMe2 h1{
+    font-weight: 1000;
+    position: relative;
+    font-size: 60px;
+    z-index: 2;
+    margin-top: 90px;
+    letter-spacing: 2px;
+    color: rgb(21, 110, 133);
+    animation: fadeDown 0.5s 0.2s backwards;
+    
+}
+
+#AboutMe2 h1:hover {
+    color: #fc4b94;
+}
+
+
+#AboutMe2 h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: -140px;
+    margin-left: 620px;
+    color: rgb(223, 220, 220);
+    z-index: 1;
+    letter-spacing: -8px;
+    animation: fadeDown 0.5s 0.2s backwards;
+    
+}
+
+#AboutMe2 .textboxP2 {
+    text-align: justify;
+    width: 75%;
+    background-color: rgba(225, 252, 252, 0.267);
+    margin-top: 50px;
+    font-size: 30px;
+    border: 5px;
+    border-radius: 10px;
+    animation: fadeUp 0.5s forwards;
+    font-weight: 400px;
+    
+}
+
+/* MySkills ================================================= */
+
+#Skills {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #65c0fd;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.textHeader {
+    margin-top: -20px;
+    margin-bottom: 200px;
+    animation: fadeDown 0.5s 0.2s backwards;
+}
+
+
+
+#Skills h1 {
+   position: relative;
+   font-size: 100px;
+   font-weight: 1000;
+   z-index: 2;
+   padding: 100px;
+   margin-bottom: -50px;
+   margin-left: -10px;
+   letter-spacing: 2px; 
+   color: rgb(247, 29, 112);
+   
+}
+
+#Skills h1:hover {
+    color: rgb(118, 61, 224);
+}
+
+#Skills h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 160px;
+    margin-top: -250px;
+    margin-left: 530px;
+    color: #ffffff;
+    font-weight: 700;
+    z-index: 1;
+    letter-spacing: -8px;
+}
+
+
+
+
+.skill-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 800px;
+    margin-top: -500px;
+    margin-bottom: 200px;
+    animation: fadeUp 0.5s forwards;
+}
+
+
+.skill-images img {
+    max-width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    width: 450px;
+    height: 580px;
+    margin: -10px  ;
+    margin-top: 40px;
+    padding: 5px;
+    transition: 300ms;
+    border-radius: 13px;
+    background-color: #fff;
+    border: 2px solid rgb(248, 49, 148);
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    box-shadow: 4px 7px 7px 1px #ff316f42;
+}
+
+.skill-images img:hover {
+    filter: hue-rotate(-18deg);
+    transform:  scale(1.08);
+}
+
+#Skills .wrapper {
+    margin-left: -1100px;
+
+}
+
+#Skills .box {
+    width: 550px;
+    object-fit: cover;
+}
+
+#Skills .boxArea {
+    margin-top: 200px;
+    margin-bottom: -400px;
+}
+
+#Skills .overlay h3 {
+    text-align: center;
+    margin-left: 90px;
+    font-weight: 8000;
+    margin-bottom: 5px;
+    margin-top: 50%;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgb(250, 29, 121);
+}
+
+
+#Skills .overlay p {
+    margin-bottom: 100px;
+    margin-left: -18px;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+ }
+
+
+ 
+
+/* DigitalSkills================================================= */
+
+.digitalartDiv {
+    color: rgb(255, 255, 255);
+    background-image: url(backgroundImage.png);
+    padding-bottom: 180px;
+    padding-top: 40px;
+    
+}
+
+.textHeader2 {
+    margin-top: -50px;
+    margin-bottom: 150px;
+    animation: fadeDown 0.5s 0.2s backwards;
+}
+
+.textHeader2 h1 { 
+   position: relative;
+   font-size: 100px;
+   font-weight: 1000;
+   z-index: 2;
+   padding: 100px;
+   margin-bottom: -50px;
+   letter-spacing: 2px; 
+   color:rgb(87, 208, 238);
+   
+}
+
+.textHeader2 h1:hover {
+    color: #ff479d;
+}
+
+.textHeader2 h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 160px;
+    margin-top: -250px;
+    margin-left: 530px;
+    color: #ffffffe0;
+    font-weight: 700;
+    z-index: 1;
+    letter-spacing: -8px;
+}
+/* ============================================================================== */
+
+.slider-bar {
+    position: relative;
+    max-width: 830px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #ff479d;
+    border-right: 2px solid #3eb2ff;
+    border-bottom: 2px solid #3eb2ff;
+    box-shadow: 4px 7px 7px 0px hsla(0, 100%, 99%, 0.259);
+    margin-top: -140px;
+    animation: fadeUp 0.5s forwards;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 8.4/9;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    border-radius: 8px;
+    width: 830px;
+    
+}
+
+.slider img {
+    flex: 1 0 100%;
+    object-fit: cover;
+    transition: 400ms;
+    cursor: pointer;
+    
+}
+
+.slider img:hover {
+    filter: hue-rotate(-18deg);
+    transform:  scale(1.08);
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -170px;
+    z-index: 1;
+    animation: fadeUp 0.5s forwards;
+}
+
+.slider-nav a { 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #050000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    border: 2px solid #fff;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+    background-color: #BE3144;
+}
+
+.socials {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   margin-right : 1000px;
+   
+}
+
+.socials-div {
+    margin-bottom: -1000px;
+    margin-top: 160px;
+}
+
+
+.socials-div a img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    border: 2px solid #ff479d;
+    border-right: 2px solid #3eb2ff;
+    border-bottom: 2px solid #3eb2ff;
+}
+
+.socials-div img:hover {
+    transform:  scale(1.2);
+}
+
+/* ReachOut============================================= */
+
+#MessageMe {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    min-height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #65c0fd;
+    
+}
+
+.Message-me-container {
+    width: auto;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 25px;
+    border: 2px solid #BE3144;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    border-radius: 45px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+    animation: fadeUp 0.5s forwards;
+    
+}
+
+.Message-me-container h1 {
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: center;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.form .input-box1 label {
+    font-weight: bold;
+    display: flex;
+}
+
+.form .input-box1 input {
+    position: relative;
+    height: 50px;
+    width: 282px;
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+.form .input-box input {
+    position: relative;
+    outline: none;
+    height: 50px;
+    width: 600px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.form .input-box label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form .input-box textarea {
+
+   border-radius: 5px;
+   border: 1px solid black;
+   width: 95%;
+   height: 150px;
+   font-size: 25px;
+}
+
+.button-container {
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    width: 80%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border: 2px solid #BE3144;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(130,106,251);
+    transition: all 0.2 ease;
+    transition: 300ms;
+}
+
+.button-container:hover {
+    transform: scale(1.08);
+}
+
+
+
+.Message-me-container .button-container a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.Message-me-container .button-container a:hover {
+    color:#ffef62;
+}
+
+.form .button-container:hover {
+    background-color: rgb(92, 66, 223);
+}
+
+/* Footer ==========================*/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.socialIcons {
+    margin: -20px 0;
+    padding-top: 20px;
+    margin-bottom: 8px;
+    animation: fadeUp 0.5s forwards;
+}
+
+.socialIcons img {
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 50px;
+    margin: 10px;
+    transition: 180ms;
+}
+
+.socialIcons img:hover {
+    transform: scale(1.3);
+}
+
+.footerMenu {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    animation: fadeUp 0.8s forwards;
+}
+
+
+.footerMenu li {
+    cursor: pointer;
+    display: inline;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    transition: 600ms;
+}
+
+.footerMenu li:hover {
+    background-color: rgb(219, 46, 104);
+}
+
+.footerMenu a {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+
+}
+
+
+
+.footerText p {
+    font-size: 16px;
+    padding-bottom: 30px;
+    animation: fadeUp 0.8s forwards;
+}
+
+/* KEYFRAMES =========================== */
+
+
+@keyframes fadeUp{
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes fadeDown{
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes typing {
+    from {width: 0}
+}
+ 
